@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Formark — el escritorio de campo del superintendente de obra</title><meta name="description" content="Pendientes, bitácora de obra, lookahead y el rastro de documentos para superintendentes de obra. Funciona sin conexión. Inglés y español.">
+<link rel="icon" href="/icon.png"><link rel="canonical" href="https://formark.io/es/">
+<link rel="alternate" hreflang="en" href="https://formark.io/"><link rel="alternate" hreflang="es" href="https://formark.io/es/">
+<meta name="color-scheme" content="dark"><style>
+:root{--bg:#101316;--surface:#1A1E23;--raised:#23282E;--text:#F3F5F7;--muted:#AEB6BF;--line:#2B3138;--brand:#FF7A1F;--brandfill:#FF6A00}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--brand)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header .wrap{display:flex;align-items:center;gap:12px;min-height:68px}
+header img{width:36px;height:36px;border-radius:8px}
+header .name{color:#fff;text-decoration:none;font-weight:800;font-size:21px}
+nav{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+nav a{font-weight:600;font-size:15px;color:#E6E9EC;text-decoration:none;padding:13px 10px}
+nav a.lang{border:1px solid var(--line);border-radius:999px;padding:9px 14px;margin-left:4px}
+h1{font-size:clamp(34px,6.2vw,60px);line-height:1.06;font-weight:800;letter-spacing:-.02em;margin:0 0 18px}
+h1 span{color:var(--brand);display:block}
+h2{font-size:clamp(26px,3.6vw,36px);line-height:1.15;font-weight:800;letter-spacing:-.01em;margin:0 0 28px}
+h3{font-size:20px;line-height:1.25;font-weight:800;margin:0 0 8px}
+p{margin:0}
+.muted{color:var(--muted)}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding-top:40px;padding-bottom:72px}
+.lead{font-size:20px;color:var(--muted);max-width:34em}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 28px;padding:0;list-style:none}
+.chips li{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:7px 14px;font-size:15px;font-weight:600}
+.cta{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 26px;border-radius:14px;background:var(--brandfill);color:#fff;font-weight:800;font-size:18px;text-decoration:none}
+.cta.soon{background:var(--raised);color:var(--text);border:1px solid var(--line)}
+.under{margin-top:14px;font-size:15px;color:var(--muted)}
+.phone{border:10px solid #2B3138;border-radius:46px;overflow:hidden;background:#000;line-height:0}
+.phone img{width:100%;height:auto;display:block}
+.hero .phone{max-width:330px;margin:0 auto}
+section{padding:64px 0;border-top:1px solid var(--line)}
+.shots{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.shot .phone{border-width:8px;border-radius:34px;margin-bottom:18px}
+.shot p{font-size:16px;color:var(--muted)}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px}
+.card p{color:var(--muted)}
+.plans{display:grid;grid-template-columns:1fr 1.25fr;gap:20px;align-items:start}
+.plan .price{font-size:22px;font-weight:800;margin:4px 0 2px;color:var(--text)}
+.plan.premium{border-color:var(--brand)}
+.plan .tag{display:inline-block;color:var(--brand);font-weight:700;font-size:15px;margin-bottom:6px}
+.plan ul{margin:16px 0 0;padding:0;list-style:none}
+.plan li{padding:10px 0 10px 30px;border-top:1px solid var(--line);position:relative}
+.plan li:before{content:"";position:absolute;left:4px;top:17px;width:12px;height:6px;border-left:3px solid var(--brand);border-bottom:3px solid var(--brand);transform:rotate(-45deg)}
+.note{margin-top:20px;color:var(--muted);font-size:15px}
+.closing{font-size:clamp(22px,3vw,30px);font-weight:800;margin-bottom:22px}
+footer{border-top:1px solid var(--line);padding:24px 0 44px;font-size:15px;color:var(--text)}
+@media (max-width:860px){
+ .hero .wrap{grid-template-columns:1fr;gap:36px;padding-top:20px;padding-bottom:52px}
+ .hero .phone{max-width:270px}
+ .shots{grid-template-columns:1fr 1fr;gap:28px 16px}
+ .cols,.plans{grid-template-columns:1fr}
+ section{padding:48px 0}
+ .lead{font-size:18px}
+ .cta{width:100%}
+ header .wrap{gap:8px;padding:0 14px}
+ header .name{font-size:19px}
+ nav{gap:0}
+ nav a{font-size:14px;padding:13px 7px}
+ nav a.lang{padding:8px 11px;margin-left:2px}
+}
+</style></head>
+<body>
+<header><div class="wrap"><img src="/icon.png" alt=""><a class="name" href="/es/">Formark</a>
+<nav><a href="/support/">Soporte</a><a href="/privacy/">Privacidad</a><a class="lang" href="/" lang="en">English</a></nav></div></header>
+<main>
+<div class="hero"><div class="wrap">
+<div><h1>El escritorio de campo del <span>superintendente de obra.</span></h1>
+<p class="lead">Pendientes, bitácora de obra, el lookahead de dos semanas y el rastro de documentos, en tu iPhone, con o sin señal.</p>
+<ul class="chips"><li>Sin cuenta</li><li>Funciona sin conexión</li><li>Inglés y español</li></ul>
+<span class="cta soon">Muy pronto en el App Store</span>
+<p class="under">Gratis para empezar · Premium tiene 14 días de prueba gratis</p></div>
+<div class="phone"><img src="/img/1-critical.jpg" width="660" height="1434" alt="Pantalla de Formark: Critical path"></div>
+</div></div>
+<section><div class="wrap"><h2>Lo que hace en una obra</h2><div class="shots"><div class="shot"><div class="phone"><img src="/img/2-voice-review.jpg" width="660" height="1434" loading="lazy" alt="Pantalla de Formark: Díctalo. Revísalo. Guárdalo."></div><h3>Díctalo. Revísalo. Guárdalo.</h3><p>Dicta un ítem, revisa lo que la app escuchó y guárdalo. Tu voz no sale del teléfono.</p></div><div class="shot"><div class="phone"><img src="/img/3-photo.jpg" width="660" height="1434" loading="lazy" alt="Pantalla de Formark: Marca la foto ahí mismo, en la obra"></div><h3>Marca la foto ahí mismo, en la obra</h3><p>Flechas, círculos, llamadas y texto. La foto original nunca se destruye.</p></div><div class="shot"><div class="phone"><img src="/img/5-thread.jpg" width="660" height="1434" loading="lazy" alt="Pantalla de Formark: Un hilo por subcontratista. Todo queda registrado."></div><h3>Un hilo por subcontratista. Todo queda registrado.</h3><p>Cada pedido, respuesta y seguimiento de cada empresa en cada obra.</p></div><div class="shot"><div class="phone"><img src="/img/6-report.jpg" width="660" height="1434" loading="lazy" alt="Pantalla de Formark: Un reporte listo para el cliente enviado desde la obra"></div><h3>Un reporte listo para el cliente enviado desde la obra</h3><p>Reportes PDF en inglés o español. Filtra y manda a cada sub solo su lista.</p></div></div></div></section>
+<section><div class="wrap"><h2>Hecha para el campo</h2><div class="cols"><div class="card"><h3>Tus fotos van a seguir ahí</h3><p>Cada foto y cada pendiente se graba en tu teléfono antes de aparecer en pantalla. No hay sincronización que esperar ni carga que falle.</p></div><div class="card"><h3>Guantes, sol, sin señal</h3><p>Botones grandes que funcionan con guantes, legible bajo el sol, tres toques desde abrir hasta crear un pendiente. Funciona sin conexión por diseño.</p></div><div class="card"><h3>Tus obras se quedan en tu teléfono</h3><p>Sin cuenta. Sin rastreo. Sin anuncios. Exporta todos tus datos a un solo archivo cuando quieras.</p></div></div></div></section>
+<section><div class="wrap"><h2>Gratis para empezar</h2><div class="plans">
+<div class="card plan"><h3>Gratis</h3><p class="price">Maneja dos obras reales gratis</p><ul><li>Pendientes, tareas y observaciones</li><li>Fotos y anotaciones ilimitadas</li><li>Fotos de obra y bitácora de obra</li><li>Registro de incidentes con el reloj de OSHA</li></ul></div>
+<div class="card plan premium"><h3>Formark Premium</h3><p class="price">$19.99 al mes o $179.99 al año</p><span class="tag">14 días de prueba gratis</span><ul><li>Obras ilimitadas, juegos de planos completos y voz en inglés y español</li><li>Lookahead, hoja de planeación, ruta crítica y delegar</li><li>Submittals, transmittals, hilos por empresa y el recorrido de verificación</li><li>Tu logo y tu línea de empresa en cada reporte, y un resumen de obras para tu PM</li><li>Reportes de mano de obra, hoja de horas semanal y el PDF del reporte de incidente (equivalente al Formulario 301 de OSHA)</li></ul></div>
+</div><p class="note">Si algún día dejas Premium, cada obra se puede leer, exportar y respaldar.</p><p class="note">Formark no está afiliado a OSHA y no es asesoría legal; el empleador sigue siendo responsable de sus registros.</p></div></section>
+<section><div class="wrap"><p class="closing">Hecha por gente que de verdad ha dirigido obras.</p><span class="cta soon">Muy pronto en el App Store</span>
+<p class="under">Preguntas: <a href="mailto:info@formark.io">info@formark.io</a></p></div></section>
+</main>
+<footer><div class="wrap">Formark es de Forja Labs · <a href="mailto:support@formark.io">support@formark.io</a></div></footer>
+</body></html>

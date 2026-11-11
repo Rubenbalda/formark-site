@@ -1,9 +1,89 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/style.css"><link rel="icon" href="/icon.png"><title>Formark — field desk for construction superintendents</title><meta name="description" content="Punch lists, daily log, lookahead and the paper trail for construction superintendents. Works offline. English and Spanish."></head><body><header><div class="wrap"><img src="/icon.png" alt=""><a href="/">Formark</a><nav><a href="/support/">Support</a><a href="/privacy/">Privacy</a></nav></div></header><main><div class="wrap">
-<h1>The field desk for construction superintendents.</h1>
-<p class="muted">Punch lists, the daily log, the two-week lookahead and the paper trail — on your iPhone, with or without signal. English and Spanish.</p>
-<div class="card"><p><strong>Coming soon to the App Store.</strong> Questions: <a href="mailto:info@formark.io">info@formark.io</a></p></div>
-<h2>Built for the field</h2>
-<ul><li>Log an item in under 60 seconds — no account, no setup.</li><li>Every photo is saved on your phone before it shows on screen.</li><li>Big buttons that work with gloves, readable in sunlight.</li><li>Your data stays on your phone. No tracking, no ads.</li></ul>
-<h2 lang="es">Hecha para la obra</h2>
-<p lang="es" class="muted">Pendientes, bitácora diaria, el lookahead de dos semanas y el rastro de documentos — en tu iPhone, con o sin señal. En español e inglés.</p>
-</div></main><footer><div class="wrap">Formark is made by Blue Brothers, LLC (d/b/a Forja Labs), Florida, USA · <a href="mailto:support@formark.io">support@formark.io</a></div></footer></body></html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Formark — field desk for construction superintendents</title><meta name="description" content="Punch lists, daily log, lookahead and the paper trail for construction superintendents. Works offline. English and Spanish.">
+<link rel="icon" href="/icon.png"><link rel="canonical" href="https://formark.io/">
+<link rel="alternate" hreflang="en" href="https://formark.io/"><link rel="alternate" hreflang="es" href="https://formark.io/es/">
+<meta name="color-scheme" content="dark"><style>
+:root{--bg:#101316;--surface:#1A1E23;--raised:#23282E;--text:#F3F5F7;--muted:#AEB6BF;--line:#2B3138;--brand:#FF7A1F;--brandfill:#FF6A00}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--brand)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header .wrap{display:flex;align-items:center;gap:12px;min-height:68px}
+header img{width:36px;height:36px;border-radius:8px}
+header .name{color:#fff;text-decoration:none;font-weight:800;font-size:21px}
+nav{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+nav a{font-weight:600;font-size:15px;color:#E6E9EC;text-decoration:none;padding:13px 10px}
+nav a.lang{border:1px solid var(--line);border-radius:999px;padding:9px 14px;margin-left:4px}
+h1{font-size:clamp(34px,6.2vw,60px);line-height:1.06;font-weight:800;letter-spacing:-.02em;margin:0 0 18px}
+h1 span{color:var(--brand);display:block}
+h2{font-size:clamp(26px,3.6vw,36px);line-height:1.15;font-weight:800;letter-spacing:-.01em;margin:0 0 28px}
+h3{font-size:20px;line-height:1.25;font-weight:800;margin:0 0 8px}
+p{margin:0}
+.muted{color:var(--muted)}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding-top:40px;padding-bottom:72px}
+.lead{font-size:20px;color:var(--muted);max-width:34em}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 28px;padding:0;list-style:none}
+.chips li{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:7px 14px;font-size:15px;font-weight:600}
+.cta{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 26px;border-radius:14px;background:var(--brandfill);color:#fff;font-weight:800;font-size:18px;text-decoration:none}
+.cta.soon{background:var(--raised);color:var(--text);border:1px solid var(--line)}
+.under{margin-top:14px;font-size:15px;color:var(--muted)}
+.phone{border:10px solid #2B3138;border-radius:46px;overflow:hidden;background:#000;line-height:0}
+.phone img{width:100%;height:auto;display:block}
+.hero .phone{max-width:330px;margin:0 auto}
+section{padding:64px 0;border-top:1px solid var(--line)}
+.shots{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.shot .phone{border-width:8px;border-radius:34px;margin-bottom:18px}
+.shot p{font-size:16px;color:var(--muted)}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px}
+.card p{color:var(--muted)}
+.plans{display:grid;grid-template-columns:1fr 1.25fr;gap:20px;align-items:start}
+.plan .price{font-size:22px;font-weight:800;margin:4px 0 2px;color:var(--text)}
+.plan.premium{border-color:var(--brand)}
+.plan .tag{display:inline-block;color:var(--brand);font-weight:700;font-size:15px;margin-bottom:6px}
+.plan ul{margin:16px 0 0;padding:0;list-style:none}
+.plan li{padding:10px 0 10px 30px;border-top:1px solid var(--line);position:relative}
+.plan li:before{content:"";position:absolute;left:4px;top:17px;width:12px;height:6px;border-left:3px solid var(--brand);border-bottom:3px solid var(--brand);transform:rotate(-45deg)}
+.note{margin-top:20px;color:var(--muted);font-size:15px}
+.closing{font-size:clamp(22px,3vw,30px);font-weight:800;margin-bottom:22px}
+footer{border-top:1px solid var(--line);padding:24px 0 44px;font-size:15px;color:var(--text)}
+@media (max-width:860px){
+ .hero .wrap{grid-template-columns:1fr;gap:36px;padding-top:20px;padding-bottom:52px}
+ .hero .phone{max-width:270px}
+ .shots{grid-template-columns:1fr 1fr;gap:28px 16px}
+ .cols,.plans{grid-template-columns:1fr}
+ section{padding:48px 0}
+ .lead{font-size:18px}
+ .cta{width:100%}
+ header .wrap{gap:8px;padding:0 14px}
+ header .name{font-size:19px}
+ nav{gap:0}
+ nav a{font-size:14px;padding:13px 7px}
+ nav a.lang{padding:8px 11px;margin-left:2px}
+}
+</style></head>
+<body>
+<header><div class="wrap"><img src="/icon.png" alt=""><a class="name" href="/">Formark</a>
+<nav><a href="/support/">Support</a><a href="/privacy/">Privacy</a><a class="lang" href="/es/" lang="es">Español</a></nav></div></header>
+<main>
+<div class="hero"><div class="wrap">
+<div><h1>The field desk for <span>construction superintendents.</span></h1>
+<p class="lead">Punch lists, the daily log, the two-week lookahead and the paper trail, on your iPhone, with or without signal.</p>
+<ul class="chips"><li>No account</li><li>Works offline</li><li>English and Spanish</li></ul>
+<span class="cta soon">Coming soon to the App Store</span>
+<p class="under">Free to start · Premium has a 14-day free trial</p></div>
+<div class="phone"><img src="/img/1-critical.jpg" width="660" height="1434" alt="Formark screen: Critical path"></div>
+</div></div>
+<section><div class="wrap"><h2>What it does on a job</h2><div class="shots"><div class="shot"><div class="phone"><img src="/img/2-voice-review.jpg" width="660" height="1434" loading="lazy" alt="Formark screen: Say it. Check it. Save it."></div><h3>Say it. Check it. Save it.</h3><p>Dictate an item, check what the app heard, then save. Your voice never leaves the phone.</p></div><div class="shot"><div class="phone"><img src="/img/3-photo.jpg" width="660" height="1434" loading="lazy" alt="Formark screen: Mark up the photo right on site"></div><h3>Mark up the photo right on site</h3><p>Arrows, circles, callouts and text. The original photo is never destroyed.</p></div><div class="shot"><div class="phone"><img src="/img/5-thread.jpg" width="660" height="1434" loading="lazy" alt="Formark screen: One thread per sub. Everything on record."></div><h3>One thread per sub. Everything on record.</h3><p>Every ask, answer and follow-up for each company on each job.</p></div><div class="shot"><div class="phone"><img src="/img/6-report.jpg" width="660" height="1434" loading="lazy" alt="Formark screen: A client-ready report sent from the site"></div><h3>A client-ready report sent from the site</h3><p>PDF reports in English or Spanish. Filter, then send each sub only their list.</p></div></div></div></section>
+<section><div class="wrap"><h2>Built for the field</h2><div class="cols"><div class="card"><h3>Your photos will still be there</h3><p>Every photo and every item is written to your phone before it shows on screen. No sync to wait for, no upload to fail.</p></div><div class="card"><h3>Gloves, sun, no signal</h3><p>Big buttons that work with gloves, readable in sunlight, three taps from open to a new item. Works offline by design.</p></div><div class="card"><h3>Your jobs stay on your phone</h3><p>No account. No tracking. No ads. Export all your data to one file whenever you want.</p></div></div></div></section>
+<section><div class="wrap"><h2>Free to start</h2><div class="plans">
+<div class="card plan"><h3>Free</h3><p class="price">Run two real jobs free</p><ul><li>Punch lists, tasks and observations</li><li>Unlimited photos and markup</li><li>Site photos and the daily log</li><li>Incident capture with the OSHA clock</li></ul></div>
+<div class="card plan premium"><h3>Formark Premium</h3><p class="price">$19.99 a month or $179.99 a year</p><span class="tag">14-day free trial</span><ul><li>Unlimited jobs, full plan sets and voice in English and Spanish</li><li>Lookahead, planning sheet, critical path and delegate</li><li>Submittals, transmittals, company threads and the verification walk</li><li>Your logo and company line on every report, and a jobs summary for your PM</li><li>Labor reports, weekly timesheet and the incident report PDF (an OSHA Form 301 equivalent)</li></ul></div>
+</div><p class="note">If you ever stop Premium, every job stays readable, exportable and backed up.</p><p class="note">Formark is not affiliated with OSHA and is not legal advice; the employer remains responsible for its records.</p></div></section>
+<section><div class="wrap"><p class="closing">Built by people who have actually run job sites.</p><span class="cta soon">Coming soon to the App Store</span>
+<p class="under">Questions: <a href="mailto:info@formark.io">info@formark.io</a></p></div></section>
+</main>
+<footer><div class="wrap">Formark is made by Forja Labs · <a href="mailto:support@formark.io">support@formark.io</a></div></footer>
+</body></html>
